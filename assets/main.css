@@ -321,13 +321,16 @@ body{
 }
 
 .statement{
-	background:#FFFFFF;
-	box-shadow:0 0 2px 3px #AAAAAA;
-	padding:1%;
-	width:70%;
-	position:relative;
-	font-size:100%;
-	margin:20% auto;
+	background: #FFF;
+    box-shadow: 0 0 4px 4px #BBB;
+    padding: 1%;
+    width: 70%;
+    position: relative;
+    font-size: 100%;
+    margin: 20% auto;
+    color: #37b4c4;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .action_completed{

@@ -79,6 +79,7 @@
 							if(decode == 'success'){
 								$(".action_completed").show();
 								$(".statement").hide();
+								$(".statement").text("✔Post deleted successfully");
 								$(".statement").fadeIn(2000,function(){
 									$(".statement").fadeOut(2000,function(){
 										$(".action_completed").hide();
@@ -128,6 +129,7 @@
 							if(decoded["status"] == "success"){
 								$(".action_completed").show();
 								$(".statement").hide();
+								$(".statement").text("✔Post saved successfully");
 								$(".statement").fadeIn(2000,function(){
 									$(".statement").fadeOut(2000,function(){
 										$(".action_completed").hide();
