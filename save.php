@@ -7,8 +7,9 @@
 	}
 	$date = date("Y-m-d");
 	$title = $_POST['name'];
+	$diary = $_POST['diary_id'];
 	$body = $_POST['content'];
-	$query = $handle->query("INSERT INTO entry(entry_title, entry_body, creation_date) VALUES('".$title."','".$body."','".$date."')");
+	$query = $handle->query("INSERT INTO entry(entry_title, entry_body, diary_id, creation_date) VALUES('".$title."','".$body."', '".$diary."', '".$date."')");
 	$json = "";
 	if($query){
 		$json = array('status' => 'success', 'title' => $title, 'date' => $date);

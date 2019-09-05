@@ -43,6 +43,19 @@ from the login form and building the session variables
 Signs the user out of the web application and destroys
 the session variables
 
+#register.php
+
+A page for users to register
+
+#register_post.php
+
+Handles user registration requests
+
+#title.php
+
+Retrieves the title of the diary the signed user has
+
 #Version
 
-This is version 1.1.0 stable
+This is version 1.1.5 stable
+

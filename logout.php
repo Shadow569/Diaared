@@ -9,6 +9,7 @@
 	if($query){
 		unset($_SESSION['session_id']);
 		unset($_SESSION['uid']);
+		unset($_SESSION['diary_id']);
 		header("location: login.php");
 	}
 	else{

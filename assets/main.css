@@ -247,7 +247,6 @@ body{
 }
 
 .input{
-	height:30%;
 	padding:2%;
 	font-size:80%;
 	border:2px solid #DDDDDD;
@@ -358,7 +357,7 @@ body{
 }
 
 .input_row_container{
-	margin:2% auto;
+	margin:3% auto;
 	width:90%;
 }
 
@@ -380,9 +379,17 @@ body{
 }
 
 .form_footer{
-	margin-top:1%;
+	margin-top:3%;
 	padding:0;
 	border-top:1px solid #AAAAAA;
+}
+
+.form{
+	padding:2%;
+}
+
+#submit-register{
+	border-radius:0 0 10px 10px;
 }
 
 .form_footer > input{
@@ -392,7 +399,25 @@ body{
 	color:#37b4c4;
 	font-size:120%;
 	border:0;
+}
+
+.btn-register{
+	width:100%;
+	height:2.4em;
+	background:#FFFFFF;
+	color:#f21a1a !important;
+	font-size:120%;
+	border:0;
 	border-radius:0 0 10px 10px;
+	border-top:1px solid #AAAAAA !important;
+}
+
+.btn-register:hover{
+	background:#DDDDDD;
+}
+
+.btn-register:active{
+	box-shadow:inset 1px 1px 4px 2px #AAAAAA;
 }
 
 .form_footer > input:hover{

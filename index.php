@@ -7,6 +7,7 @@ if(!isset($_SESSION['session_id'])){
 else{
 	echo "<div style='display:none' id='session_id'>".$_SESSION['session_id']."</div>";
 	echo "<div style='display:none' id='uid'>".$_SESSION['uid']."</div>";
+	echo "<div style='display:none' id='did'>".$_SESSION['diary_id']."</div>";
 }
 ?>
 
@@ -40,6 +41,16 @@ else{
 						else{
 							$("#no_entry").show();
 						}
+					}
+				});
+				$.ajax({
+					method:"POST",
+					url:"title.php",
+					data:{diary_id:$("#did").text()},
+					success:function(data){
+						$title = $.parseJSON(data);
+						$("title").text($title);
+						$(".title").text($title);
 					}
 				});
 				$("#new").on("click",function(){
@@ -108,6 +119,7 @@ else{
 								$.ajax({
 									method:"POST",
 									url:"retrieve.php",
+									data:{user_id:$("#uid").text()},
 									success:function(data){
 										$(".entry").remove();
 										var parsed = $.parseJSON(data);
@@ -141,7 +153,7 @@ else{
 					$.ajax({
 						method:"POST",
 						url:"save.php",
-						data:{name:title, content:body},
+						data:{diary_id:$("#did").text(), name:title, content:body},
 						success:function(data){
 							var decoded = $.parseJSON(data);
 							if(decoded["status"] == "success"){
@@ -165,6 +177,7 @@ else{
 								$.ajax({
 									method:"POST",
 									url:"retrieve.php",
+									data:{user_id:$("#uid").text()},
 									success:function(data){
 										$(".entry").remove();
 										var parsed = $.parseJSON(data);
