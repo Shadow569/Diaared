@@ -5,7 +5,7 @@
 		echo "Not able to connect";
 		$state = false;
 	}
-	$query = $handle->query("SELECT id, entry_title, creation_date FROM entry ORDER BY creation_date DESC");
+	$query = $handle->query("SELECT entry.id, entry.entry_title, entry.creation_date FROM entry INNER JOIN diaries ON entry.diary_id = diaries.id WHERE uid = '".$_POST['user_id']."' ORDER BY creation_date DESC");
 	if($query){
 		$result = array();
 		while($row = $query->fetch_assoc()){

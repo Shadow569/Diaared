@@ -27,6 +27,7 @@ else{
 				$.ajax({
 					method:"POST",
 					url:"retrieve.php",
+					data:{user_id:$("#uid").text()},
 					success:function(data){
 						$(".entry").remove();
 						var parsed = $.parseJSON(data);
