@@ -28,6 +28,21 @@ to retrieve them in real time
 Takes all the required elements of a post from an AJAX POST
 request and saves the post to the database.
 
+#login.php
+
+It is a basic interface for the user to login to the
+web application
+
+#login_post.php
+
+Handles the login process by taking the user credentials
+from the login form and building the session variables
+
+#logout.php
+
+Signs the user out of the web application and destroys
+the session variables
+
 #Version
 
-This is version 1.0.2 stable
+This is version 1.1.0 stable

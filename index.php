@@ -1,3 +1,16 @@
+<?php
+session_start();
+if(!isset($_SESSION['session_id'])){
+	header("location: login.php");
+	exit();
+}
+else{
+	echo "<div style='display:none' id='session_id'>".$_SESSION['session_id']."</div>";
+	echo "<div style='display:none' id='uid'>".$_SESSION['uid']."</div>";
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -117,6 +130,10 @@
 						$("#retrieve_entry").hide();
 					});
 				});
+				$("#logout").on("click",function(){
+					window.location.href="logout.php";
+					return false;
+				});
 				$("#save").on("click",function(){
 					var title = $("#title").val();
 					var body = $("#body").val();
@@ -228,6 +245,7 @@
 			</div>
 			<div class='dry_footer'>
 				<button class='new' id='new'>+</button>
+				<button class='logout' id='logout'>Logout</button>
 			</div>
 		</div>
 	</body>
