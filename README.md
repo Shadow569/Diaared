@@ -29,4 +29,5 @@ Takes all the required elements of a post from an AJAX POST
 request and saves the post to the database.
 
 #Version
+
 This is version 1.0.0 stable
