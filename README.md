@@ -30,4 +30,4 @@ request and saves the post to the database.
 
 #Version
 
-This is version 1.0.0 stable
+This is version 1.0.2 stable
