@@ -52,6 +52,7 @@ else{
 						$title = $parsed['title'];
 						$color = $parsed['color'];
 						$(".title").css('background',$color);
+						$(".new").css('background',$color);
 						$("title").text($title);
 						$(".title").text($title);
 					}
@@ -74,8 +75,19 @@ else{
 						url:"get_full_post.php",
 						data:{identifier:id},
 						success:function(data){
-							var decoded = $.parseJSON(data);
+							try{
+								var decoded = $.parseJSON(data);
+							}
+							catch(exception){
+								alert(data);
+							}
 							$(".read_title").text(decoded["entry_title"]);
+							if($(".date-contain")[0]){
+								$(".date-contain").html("<div class='date-contain'><div class='split-line-left'></div><div class='date_entry'>"+decoded['creation_date']+"</div><div class='split-line-right'></div></div>");
+							}
+							else{
+								$(".body_outer").prepend("<div class='date-contain'><div class='split-line-left'></div><div class='date_entry'>"+decoded['creation_date']+"</div><div class='split-line-right'></div></div>");
+							}
 							$(".body").html(decoded["entry_body"]);
 							$("#viewing").text(id);
 							$("#retrieve_entry").show();

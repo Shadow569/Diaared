@@ -62,6 +62,40 @@ body{
 	position:relative;
 }
 
+.split-line-left{
+	text-align:left;
+	width:25%;
+	display:inline-block;
+	background:#AAAAAA;
+	height:0.05em;
+	margin-bottom:0.8%;
+}
+
+.date_entry{
+	text-align:center;
+	width:40%;
+	display:inline-block;
+}
+
+.split-line-right{
+	text-align:right;
+	width:25%;
+	display:inline-block;
+	background:#AAAAAA;
+	height:0.05em;
+	margin-bottom:0.8%;
+}
+
+.date-contain{
+	font-size:80%;
+	color:#DDDDDD;
+	text-decoration:italic;
+	width:100%;
+	text-align:center;
+	margin-top:2%;
+	vertical-align:center;
+}
+
 .new{
 	float:right;
 	background:blue;
