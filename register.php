@@ -15,6 +15,21 @@
 							<input type="text" name="diary_title" size="10" maxlength="50" />
 						</div>
 						<div class='input_row_container'>
+							<div class='input_label'>Diary Color</div>
+							<select name='color' class='dropdown-color'>
+								<option value='red'>Red</option>
+								<option value='green'>Green</option>
+								<option value='blue'>Blue</option>
+								<option value='brown'>Brown</option>
+								<option value='purple'>Purple</option>
+								<option value='yellow'>Yellow</option>
+								<option value='orange'>Orange</option>
+								<option value='cyan'>Cyan</option>
+								<option value='pink'>Pink</option>
+								<option value='black'>Black</option>
+							</select>
+						</div>
+						<div class='input_row_container'>
 							<div class='input_label'>Username</div>
 							<input type="text" name="username" size="10" maxlength="50" />
 						</div>
@@ -24,7 +39,8 @@
 						</div>
 					</div>
 					<div class='form_footer'>
-						<input id='submit-register' type="submit" name="register" value="Register" />
+						<input id='submit-register' type="submit" name="register" value="Register	➡" />
+						<input id='login' class='btn-register' type="submit" name="log" value="⬅	Back to Login" />
 					</div>
 				</form>
 			</div>

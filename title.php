@@ -6,13 +6,19 @@
 		$state = false;
 		echo json_encode("Generic Diary");
 	}
-	$query = $sqlHandler->query("SELECT name FROM diaries WHERE id = '".$_POST['diary_id']."'");
+	$query = $sqlHandler->query("SELECT name,color FROM diaries WHERE id = '".$_POST['diary_id']."'");
 	if($query){
 		$res = $query->fetch_assoc();
-		echo json_encode($res['name']);
+		$arr = array();
+		$arr['title'] = $res['name'];
+		$arr['color'] = $res['color'];
+		echo json_encode($arr);
 	}
 	else{
-		echo json_encode("Generic Diary");
+		$arr = array();
+		$arr['title'] = "Generic Diary";
+		$arr['color'] = "blue";
+		echo json_encode($arr);
 	}
 	$sqlHandler->close();
 ?>

@@ -57,5 +57,12 @@ Retrieves the title of the diary the signed user has
 
 #Version
 
-This is version 1.1.5 stable
+This is version 1.2.1 stable
+
+#Added Functionality
+
+-Multiple users
+-Choices of colors
+-minor updates to user interface
+
 

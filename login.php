@@ -28,8 +28,8 @@
 						</div>
 					</div>
 					<div class='form_footer'>
-						<input type="submit" name="login" value="Sign-In" />
-						<input id='register' class='btn-register' type="submit" name="reg" value="Register" />
+						<input type="submit" name="login" value="Sign-In	➡" />
+						<input id='register' class='btn-register' type="submit" name="reg" value="Register	➡" />
 					</div>
 				</form>
 			</div>

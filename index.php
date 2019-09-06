@@ -48,7 +48,10 @@ else{
 					url:"title.php",
 					data:{diary_id:$("#did").text()},
 					success:function(data){
-						$title = $.parseJSON(data);
+						$parsed = $.parseJSON(data);
+						$title = $parsed['title'];
+						$color = $parsed['color'];
+						$(".title").css('background',$color);
 						$("title").text($title);
 						$(".title").text($title);
 					}
@@ -259,7 +262,7 @@ else{
 			</div>
 			<div class='dry_footer'>
 				<button class='new' id='new'>+</button>
-				<button class='logout' id='logout'>Logout</button>
+				<button class='logout' id='logout'>🚪➡</button>
 			</div>
 		</div>
 	</body>

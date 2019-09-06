@@ -12,6 +12,13 @@ body{
 #no_entry{
 	width:100%;
 	text-align:center;
+	top:50%;
+	font-size:200%;
+	margin:1% auto;
+}
+
+#login{
+	color:#444444 !important;
 }
 
 .dry_contain{
@@ -71,11 +78,13 @@ body{
 	background:#CC0000;
 	color:#FFFFFF;
 	font-weight:bold;
-	font-size:180%;
-	padding:1% 2%;
-	border-radius:3px;
+	font-size:150%;
+	padding:1%;
+	border-radius:2%;
 	border:1px solid #000055;
 }
+
+
 
 .logout:hover{
 	background:#AA0000;
@@ -366,6 +375,14 @@ body{
 }
 
 .input_row_container > input{
+	width:100%;
+	font-size:100%;
+	padding:1%;
+	border-radius:3px;
+	border:1px solid #888888;
+}
+
+.dropdown-color{
 	width:100%;
 	font-size:100%;
 	padding:1%;
