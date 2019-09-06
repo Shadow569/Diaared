@@ -64,5 +64,6 @@ This is version 1.2.1 stable
 -Multiple users
 -Choices of colors
 -minor updates to user interface
+-Added date display on entry viewer
 
 
