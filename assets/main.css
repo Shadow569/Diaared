@@ -64,7 +64,7 @@ body{
 
 .split-line-left{
 	text-align:left;
-	width:25%;
+	width:29%;
 	display:inline-block;
 	background:#AAAAAA;
 	height:0.05em;
@@ -81,7 +81,7 @@ body{
 
 .split-line-right{
 	text-align:right;
-	width:25%;
+	width:29%;
 	display:inline-block;
 	background:#AAAAAA;
 	height:0.05em;
@@ -106,7 +106,8 @@ body{
 	font-size:180%;
 	padding:1% 2%;
 	border-radius: 50%;
-	border:1px solid #000055;
+	box-shadow:1px 1px 5px 2px #AAAAAA;
+	border:0;
 }
 
 .logout{
@@ -117,7 +118,8 @@ body{
 	font-size:150%;
 	padding:1%;
 	border-radius:2%;
-	border:1px solid #000055;
+	border:0;
+	box-shadow:1px 1px 5px 2px #AAAAAA;
 }
 
 

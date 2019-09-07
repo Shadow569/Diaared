@@ -170,7 +170,7 @@ else{
 						url:"save.php",
 						data:{diary_id:$("#did").text(), name:title, content:body},
 						success:function(data){
-							var decoded = $.parseJSON(data);
+							var decoded = $.parseJSON(data);	
 							if(decoded["status"] == "success"){
 								$(".action_completed").show();
 								$(".statement").hide();
@@ -208,8 +208,18 @@ else{
 									}
 								});
 							}
-							else{
-								alert("There was an error occured during the process");
+							else if(decoded["status"] == "fail"){
+								$(".action_completed").show();
+								$(".statement").hide();
+								$(".statement").text("❌some error occured and the post was not saved");
+								var prevColor = $(".statement").css("color");
+								$(".statement").css("color","red");
+								$(".statement").fadeIn(2000,function(){
+									$(".statement").fadeOut(2000,function(){
+										$(".action_completed").hide();
+										$(".statement").css("color",prevColor);
+									});
+								});
 							}
 						}
 					});

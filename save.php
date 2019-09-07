@@ -1,4 +1,12 @@
-<?php	
+<?php
+	if(empty($_POST['name'])){
+		echo json_encode(array('status'=>'fail'));
+		exit();
+	}
+	if(empty($_POST['content'])){ 
+		echo json_encode(array('status'=>'fail'));
+		exit();
+	}
 	$state = true;
 	date_default_timezone_set('Europe/Athens');
 	$handle = new mysqli('localhost','diarrhea', 'diarrhola55', 'diary_posts');
