@@ -57,7 +57,9 @@ Retrieves the title of the diary the signed user has
 
 #Version
 
-This is version 1.2.1 stable
+This is version 1.2.3 stable
+
+This includes some bug fixes
 
 #Added Functionality
 
@@ -65,5 +67,9 @@ This is version 1.2.1 stable
 -Choices of colors
 -minor updates to user interface
 -Added date display on entry viewer
+-Records also the creation time of the entry
+
+
+
 
 

@@ -75,6 +75,8 @@ body{
 	text-align:center;
 	width:40%;
 	display:inline-block;
+	font-size:110%;
+	font-weight:bold;
 }
 
 .split-line-right{
@@ -478,7 +480,18 @@ body{
 .form_footer > input:active{
 	box-shadow:inset 1px 1px 4px 2px #AAAAAA;
 }
-.
+
+
+.action_completed{
+	z-index:83;
+	position:fixed;
+	background:rgba(100,100,100,0.6);
+	width:100%;
+	height:100%;
+	overflow:auto;
+	margin:0 !important;
+	display:none;
+}
 
 .statement{
 	background: #FFF;
@@ -491,17 +504,6 @@ body{
     color: #37b4c4;
     text-align: center;
     border-radius: 10px;
-}
-
-.action_completed{
-	z-index:83;
-	position:fixed;
-	background:rgba(100,100,100,0.6);
-	width:100%;
-	height:100%;
-	overflow:auto;
-	margin:0 !important;
-	display:none;
 }
 
 .delete:active{
@@ -525,7 +527,7 @@ body{
 }
 
 #new:hover{
-	background:#0000AA;
+	background:#0000AA !important;
 }
 
 .close:active{

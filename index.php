@@ -83,10 +83,10 @@ else{
 							}
 							$(".read_title").text(decoded["entry_title"]);
 							if($(".date-contain")[0]){
-								$(".date-contain").html("<div class='date-contain'><div class='split-line-left'></div><div class='date_entry'>"+decoded['creation_date']+"</div><div class='split-line-right'></div></div>");
+								$(".date-contain").html("<div class='date-contain'><div class='split-line-left'></div><div class='date_entry'>"+decoded['creation_date']+" at "+decoded['creation_time']+"</div><div class='split-line-right'></div></div>");
 							}
 							else{
-								$(".body_outer").prepend("<div class='date-contain'><div class='split-line-left'></div><div class='date_entry'>"+decoded['creation_date']+"</div><div class='split-line-right'></div></div>");
+								$(".body_outer").prepend("<div class='date-contain'><div class='split-line-left'></div><div class='date_entry'>"+decoded['creation_date']+" at "+decoded['creation_time']+"</div><div class='split-line-right'></div></div>");
 							}
 							$(".body").html(decoded["entry_body"]);
 							$("#viewing").text(id);

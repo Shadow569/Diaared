@@ -9,6 +9,7 @@
 	if($query){
 		$result = array();
 		while($row = $query->fetch_assoc()){
+			$row['creation_date'] = date("d-m-Y", strtotime($row['creation_date']));
 			array_push($result, $row);
 		}
 		echo json_encode($result);
